@@ -25,3 +25,5 @@ Dev branch
 Main branch
 | Run release workflow on merge
 References are updated and commit is tagged
+
+## Demo: Course Evaluation Survey
