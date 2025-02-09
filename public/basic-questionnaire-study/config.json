@@ -1,0 +1,149 @@
+{
+    "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.2/src/parser/StudyConfigSchema.json",
+    "studyMetadata": {
+        "title": "Course XXXX Evaluation Survey",
+        "version": "pilot",
+        "authors": [
+            "Shano"
+        ],
+        "date": "2025-02-08",
+        "description": "A simple demo survey, following the tutorial",
+        "organizations": [
+            "WPI"
+        ]
+    },
+    "uiConfig": {
+        "contactEmail": "contact@revisit.dev",
+        "helpTextPath": "basic-questionnaire-study/assets/help.md",
+        "logoPath": "revisitAssets/revisitLogoSquare.svg",
+        "withProgressBar": true,
+        "autoDownloadStudy": false,
+        "sidebar": true
+    },
+    "components": {
+        "Introduction": {
+            "type": "markdown",
+            "path": "basic-questionnaire-study/assets/introduction.md",
+            "response": []
+        },
+        "Basic Information": {
+            "type": "questionnaire",
+            "response": [
+                {
+                    "id": "q1-i1-name",
+                    "prompt": "What is your first and last name?",
+                    "required": true,
+                    "withDivider": true,
+                    "location": "aboveStimulus",
+                    "type": "longText",
+                    "placeholder": "Please enter your first and last name"
+                },
+                {
+                    "id": "q1-i2-id",
+                    "prompt": "What is your student ID?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "longText",
+                    "placeholder": "Please enter your student ID"
+                }
+            ]
+        },
+        "General Evaluation": {
+            "type": "questionnaire",
+            "response": [
+                {
+                    "id": "q2-rate",
+                    "prompt": "Rate your satisfaction from 1 (Highly Unsatisfied) to 5 (Highly Satisfied) for the following aspects of the lecturer's performance in the course.",
+                    "secondaryText": "You can safely rate based on your true feelings here.",
+                    "location": "aboveStimulus",
+                    "type": "matrix-radio",
+                    "withDivider": true,
+                    "answerOptions": "satisfaction5",
+                    "questionOptions": [
+                      "Overall rating of the quality of the lectures of the course",
+                      "The educational value of the textbook assigned reading",
+                      "The organization of the course"
+                    ]
+                },
+                {
+                    "id": "q3-description",
+                    "prompt": "Which of the following best describes the role of this course in your academic program?",
+                    "required": true,
+                    "withDivider": true,
+                    "location": "aboveStimulus",
+                    "type": "checkbox",
+                    "horizontal": true,
+                    "options": ["In your major field", "Required for major", "Free elective", "Required for minor"],
+                    "withOther": true
+                },
+                {
+                    "id": "q4-radio",
+                    "prompt": "What grade do you think you will receive in this course?",
+                    "secondaryText": "If you don't know, please select 'Other/Don't Know'",
+                    "location": "aboveStimulus",
+                    "type": "radio",
+                    "options": [
+                      "A",
+                      "B",
+                      "C",
+                      "NR/D/F",
+                      "Other/Don't Know"
+                    ]
+                },
+                {
+                    "id": "q5-slider",
+                    "prompt": "How likely are you to recommend this course to your classmates?",
+                    "location": "aboveStimulus",
+                    "type": "slider",
+                    "startingValue": 50,
+                    "options": [
+                      {
+                        "label": "Not likely",
+                        "value": 0
+                      },
+                      {
+                        "label": "Very likely",
+                        "value": 100
+                      }
+                    ]
+                }
+            ]
+        },
+        "Image-based Evaluation": {
+            "meta": {
+              "difficulty": 1,
+              "nr-dots": 20,
+              "temp": "low"
+            },
+            "description": "Low temperature variant",
+            "instruction": "Please choose a color in the picture that you think best represents how you feel about this course.",
+            "type": "image",
+            "path": "basic-questionnaire-study/assets/test-color.jpg",
+            "style": {
+              "width": "800px"
+            },
+            "nextButtonLocation": "sidebar",
+            "response": [
+            {
+                "id": "demo-image/assets-response",
+                "prompt": "Your Choice",
+                "location": "sidebar",
+                "type": "checkbox",
+                "options": ["A", "B", "C", "D", "E", "F", "G"],
+                "withOther": true
+            }
+            ],
+            "nextButtonEnableTime": 3000,
+            "nextButtonDisableTime": 15000
+        }
+    },
+    "sequence": {
+        "order": "fixed",
+        "components": [
+            "Introduction",
+            "Basic Information",
+            "General Evaluation",
+            "Image-based Evaluation"
+        ]
+    }
+}
