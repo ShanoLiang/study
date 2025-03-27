@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome! This is a course evaluation survey for students from course XXXX. 
+Welcome! This is a trial survey for the opacity project. 
 
 **Please click [NEXT] to start the survey**
 
