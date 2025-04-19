@@ -1,9 +1,9 @@
 # Introduction
 
-Welcome! This is a trial survey for the opacity project. 
+Welcome to our study. 
+
+In this study, you will be shown two area charts. You will be asked to select the chart that is more opaque (less transparent).
 
 **Please click [NEXT] to start the survey**
 
 
-
-For more information, please visit our website: [View Lab Website](https://wpivis.github.io/)
