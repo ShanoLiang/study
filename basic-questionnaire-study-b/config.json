@@ -107500,7 +107500,7 @@
     "logoPath": "revisitAssets/revisitLogoSquare.svg",
     "nextOnEnter": true,
     "sidebar": true,
-    "studyEndMsg": "**Thank you for completing the study. You may click this link and return to Prolific**: [link](link)",
+    "studyEndMsg": "**Thank you for completing the study. You may click this link and return to Prolific**: [https://app.prolific.com/submissions/complete?cc=C4FOR4D8](https://app.prolific.com/submissions/complete?cc=C4FOR4D8)",
     "withProgressBar": true,
     "urlParticipantIdParam": "PROLIFIC_PID",
     "participantNameField": "introduction.prolificId"
