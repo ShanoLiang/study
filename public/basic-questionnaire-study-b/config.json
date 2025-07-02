@@ -4,17 +4,27 @@
     "introduction": {
       "correctAnswer": [],
       "path": "basic-questionnaire-study-b/assets/introduction.md",
-      "response": [],
+      "response": [
+        {
+          "id": "prolificId",
+          "prompt": "Please enter your Prolific ID",
+          "location": "belowStimulus",
+          "type": "shortText",
+          "placeholder": "Prolific ID",
+          "paramCapture": "PROLIFIC_PID"
+        }
+      ],
       "type": "markdown"
     },
     "Consent Form": {
       "correctAnswer": [],
       "path": "basic-questionnaire-study-b/assets/consent.md",
+      "nextButtonText": "Agree",
       "response": [
         {
           "id": "signature",
           "location": "belowStimulus",
-          "placeholder": "Enter your name as your consent form signature",
+          "placeholder": "Please provide your signature",
           "prompt": "Your signature",
           "required": true,
           "type": "shortText"
@@ -107486,9 +107496,13 @@
   },
   "uiConfig": {
     "contactEmail": "sliang1@wpi.edu",
+    "helpTextPath": "basic-questionnaire-study-b/assets/help.md",
     "logoPath": "revisitAssets/revisitLogoSquare.svg",
     "nextOnEnter": true,
     "sidebar": true,
-    "withProgressBar": false
+    "studyEndMsg": "**Thank you for completing the study. You may click this link and return to Prolific**: [link](link)",
+    "withProgressBar": true,
+    "urlParticipantIdParam": "PROLIFIC_PID",
+    "participantNameField": "introduction.prolificId"
   }
 }
