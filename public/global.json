@@ -1,6 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.1.0/src/parser/GlobalConfigSchema.json",
   "configsList": [
+    "opacity-jnd",
     "basic-questionnaire-study-b",
     "basic-questionnaire-study",
     "tutorial",
@@ -39,6 +40,9 @@
 
   ],
   "configs": {
+    "opacity-jnd": {
+      "path": "opacity-jnd/config.json"
+    },
     "basic-questionnaire-study-b": {
       "path": "basic-questionnaire-study-b/config.json"
     },
