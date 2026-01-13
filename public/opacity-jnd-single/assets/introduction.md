@@ -1,4 +1,4 @@
-# Opacity Judgment Study (Version A)
+# Opacity Judgment Study (Version Jan_13_2026)
 
 This study combines two parts: in the first part of this study, you will be shown images of an Ishihara color blindness test plate. You will be asked to identify the number or pattern in the image.
 

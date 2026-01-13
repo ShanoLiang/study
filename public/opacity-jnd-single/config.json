@@ -109824,8 +109824,8 @@
     "organizations": [
       "VIS Lab"
     ],
-    "title": "Opacity Judgment Study Mix -- Single Pair",
-    "version": "3.0"
+    "title": "Opacity Judgment Study",
+    "version": "3.1"
   },
   "uiConfig": {
     "contactEmail": "sliang1@wpi.edu",
@@ -109833,7 +109833,7 @@
     "logoPath": "revisitAssets/revisitLogoSquare.svg",
     "nextOnEnter": true,
     "sidebar": true,
-    "studyEndMsg": "**Thank you for completing the study. You may click this link and return to Prolific**: [unknown](unknown)",
+    "studyEndMsg": "**Thank you for completing the study. You may click this link and return to Prolific**: [https://app.prolific.com/submissions/complete?cc=C9A65M26](https://app.prolific.com/submissions/complete?cc=C9A65M26)",
     "withProgressBar": true,
     "urlParticipantIdParam": "PROLIFIC_PID",
     "participantNameField": "introduction.prolificId"
