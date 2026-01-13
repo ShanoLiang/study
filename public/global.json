@@ -43,9 +43,6 @@
     "opacity-jnd-single": {
       "path": "opacity-jnd-single/config.json"
     },
-    "opacity-jnd": {
-      "path": "opacity-jnd/config.json"
-    },
     "basic-questionnaire-study-b": {
       "path": "basic-questionnaire-study-b/config.json"
     },
